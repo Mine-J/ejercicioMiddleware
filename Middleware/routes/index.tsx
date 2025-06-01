@@ -1,6 +1,6 @@
 import { FreshContext, Handlers } from "$fresh/server.ts";
 import { ObjectId } from "mongodb";
-import { Formulario } from "../components/Formulario.tsx";
+import { FormularioDni } from "../components/FormularioDni.tsx";
 import { DniCollection } from "../routes/db/db.ts"
 import { dniModel } from "../types.ts";
 
@@ -33,7 +33,7 @@ export const handler: Handlers = {
 export default function Home() {
   return (
     
-      <Formulario />
+      <FormularioDni />
     
   );
 }

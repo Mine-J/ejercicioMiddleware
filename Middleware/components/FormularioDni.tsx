@@ -1,4 +1,4 @@
-export const Formulario = () => {
+export const FormularioDni = () => {
   return (
     <div class = "formulario">
       <h1>Introduce el DNI</h1>

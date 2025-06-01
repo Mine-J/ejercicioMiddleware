@@ -1,7 +1,7 @@
 import { FreshContext, Handlers, PageProps } from "$fresh/server.ts";
 import Axios from "npm:axios";
 import { Character } from "../../types.ts";
-import { Personajes } from "../../islands/Personajes.tsx";
+import { Personajes } from "../../components/Personajes.tsx";
 import { CharacterFavCollection } from "../db/db.ts";
 
 export const handler: Handlers = {

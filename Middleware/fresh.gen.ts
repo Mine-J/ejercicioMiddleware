@@ -2,21 +2,25 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $_rutas_Personaje from "./routes/(rutas)/Personaje.tsx";
 import * as $_rutas_Personajes from "./routes/(rutas)/Personajes.tsx";
 import * as $_rutas_middleware from "./routes/(rutas)/_middleware.ts";
+import * as $FormPersonaje from "./routes/FormPersonaje.tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $db_db from "./routes/db/db.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
-import * as $Personajes from "./islands/Personajes.tsx";
+import * as $FormularioPersonaje from "./islands/FormularioPersonaje.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
+    "./routes/(rutas)/Personaje.tsx": $_rutas_Personaje,
     "./routes/(rutas)/Personajes.tsx": $_rutas_Personajes,
     "./routes/(rutas)/_middleware.ts": $_rutas_middleware,
+    "./routes/FormPersonaje.tsx": $FormPersonaje,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/joke.ts": $api_joke,
@@ -25,7 +29,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/Personajes.tsx": $Personajes,
+    "./islands/FormularioPersonaje.tsx": $FormularioPersonaje,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

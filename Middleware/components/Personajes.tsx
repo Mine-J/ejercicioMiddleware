@@ -15,7 +15,7 @@ export const Personajes: FunctionalComponent<info> = (data) => {
                 <button
                   class="botonFav"
                   type="button"
-                  onClick={(e) => favHandler(e)}
+                  
                 >
                   <img class="fotoFav" src="/favoritoOn.png" alt="foto" />
                 </button>
@@ -23,7 +23,7 @@ export const Personajes: FunctionalComponent<info> = (data) => {
                 <button
                   class="botonFav"
                   type="button"
-                  onClick={(e) => favHandler(e)}
+                  
                 >
                   <img class="fotoFav" src="/favoritoOff.png" alt="foto" />
                 </button>
