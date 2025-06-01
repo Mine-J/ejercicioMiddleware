@@ -15,6 +15,7 @@ export type Character = {
     favorito: boolean;
 }
 export type CharacterModel = {
+    _id:ObjectId,
     id: string,
     name: string,
     species: string,

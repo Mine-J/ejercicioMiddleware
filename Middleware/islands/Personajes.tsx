@@ -1,6 +1,5 @@
 import { FunctionalComponent } from "preact/src/index.d.ts";
 import { Character, info } from "../types.ts";
-import { CharacterFavCollection } from "../routes/db/db.ts";
 
 export const Personajes: FunctionalComponent<info> = (data) => {
   const personajes = data.data;
