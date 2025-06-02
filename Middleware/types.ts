@@ -15,7 +15,7 @@ export type Character = {
     favorito: boolean;
 }
 export type CharacterModel = {
-    _id:ObjectId,
+    _id: ObjectId,
     id: string,
     name: string,
     species: string,
@@ -25,7 +25,10 @@ export type CharacterModel = {
     image: string
     favorito: boolean;
 }
-export type info = {
+export type infoArray = {
     data: Character[];
-    
+
+}
+export type info = {
+    data: Character;
 }

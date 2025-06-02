@@ -5,7 +5,7 @@ import { Personajes } from "../../components/Personajes.tsx";
 import { CharacterFavCollection } from "../db/db.ts";
 
 export const handler: Handlers = {
-  GET: async (req: Request, ctx: FreshContext<unknown, Character[]>) => {
+  GET: async (_req: Request, ctx: FreshContext<unknown, Character[]>) => {
     const personajes = await Axios.get<Character[]>(
       "https://hp-api.onrender.com/api/characters"
     );
@@ -38,5 +38,5 @@ export const handler: Handlers = {
 export default function Home(props: PageProps<Character[]>) {
   const personajes = props.data;
 
-  return<Personajes data={personajes} />;
+  return <Personajes data={personajes} />;
 }

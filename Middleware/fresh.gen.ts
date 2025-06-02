@@ -2,7 +2,8 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $_rutas_Personaje from "./routes/(rutas)/Personaje.tsx";
+import * as $_rutaPersonaje_Personaje from "./routes/(rutaPersonaje)/Personaje.tsx";
+import * as $_rutaPersonaje_middleware from "./routes/(rutaPersonaje)/_middleware.ts";
 import * as $_rutas_Personajes from "./routes/(rutas)/Personajes.tsx";
 import * as $_rutas_middleware from "./routes/(rutas)/_middleware.ts";
 import * as $FormPersonaje from "./routes/FormPersonaje.tsx";
@@ -17,7 +18,8 @@ import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/(rutas)/Personaje.tsx": $_rutas_Personaje,
+    "./routes/(rutaPersonaje)/Personaje.tsx": $_rutaPersonaje_Personaje,
+    "./routes/(rutaPersonaje)/_middleware.ts": $_rutaPersonaje_middleware,
     "./routes/(rutas)/Personajes.tsx": $_rutas_Personajes,
     "./routes/(rutas)/_middleware.ts": $_rutas_middleware,
     "./routes/FormPersonaje.tsx": $FormPersonaje,

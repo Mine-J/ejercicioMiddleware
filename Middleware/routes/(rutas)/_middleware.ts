@@ -24,8 +24,4 @@ export async function handler(req: Request, ctx: FreshContext<State>) {
             headers,
         });
     }
-
-    
-
-
 }
